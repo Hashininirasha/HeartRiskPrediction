@@ -23,7 +23,8 @@ def getresults():
 
 	print(result)
 
-	name=result['name']
+	fname=result['fname']
+	lname=result['lname']
 	gender=float(result['gender'])
 	age=float(result['age'])
 	tc=float(result['tc'])
@@ -41,7 +42,7 @@ def getresults():
 	prediction=scaler_target.inverse_transform(prediction) #inverse scaling the prediction(target) before returning
 	print(prediction,prediction[0],prediction[0][0])
 	
-	resultDict={"name":name,"risk":round(prediction[0][0],2)}
+	resultDict={"fname":fname,"lname":lname,"risk":round(prediction[0][0],2)}
 
 	return render_template('patient_results.html',results=resultDict)
 

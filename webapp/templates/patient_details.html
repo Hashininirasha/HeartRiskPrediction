@@ -36,10 +36,10 @@
 			<div class="row">
 			  <div class="col">
 			 
-				<input type="text" name="name" class="form-control" placeholder="First name">
+				<input type="text" name="fname" pattern="^[a-zA-Z]+$" title="Give Your First Name Only" class="form-control" placeholder="First name">
 			  </div>
 			  <div class="col">
-				<input type="text" class="form-control" placeholder="Last name">
+				<input type="text" name="lname" pattern="^[a-zA-Z]+$" title="Give Your Last Name Only" class="form-control" placeholder="Last name">
 			  </div>
 			</div>
 		</div>
@@ -47,21 +47,10 @@
 			<div class="row">
 				<div class="col">
 				
-				  <input type="text" name="gender" class="form-control" placeholder="Gender (0-male,1-Female)">
+				  <input type="text" name="gender" class="form-control"  pattern="[0-1]\d" placeholder="Gender (0-male,1-Female)">
 				</div>
 				<div class="col">
-				  <input type="text" name="age" class="form-control" placeholder="Age">
-				</div>
-			  </div>
-		</div>
-
-		<div class="intro">
-			<div class="row">
-				<div class="col">
-				  <input type="text" name="tc" class="form-control" placeholder="TC (mg/dL)">
-				</div>
-				<div class="col">
-				  <input type="text" name="hdl" class="form-control" placeholder="HDL (mg/dL)">
+				  <input type="text" name="age" class="form-control"  title="Give it as a number" placeholder="Age">
 				</div>
 			  </div>
 		</div>
@@ -69,13 +58,24 @@
 		<div class="intro">
 			<div class="row">
 				<div class="col">
-				  <input type="text" name="smoke" class="form-control" placeholder="Smoke (1-yes,0-no)">
+				  <input type="text" name="tc" class="form-control"  title="Give it as a number" placeholder="TC (mg/dL)">
 				</div>
 				<div class="col">
-				  <input type="text" name="bpm" class="form-control" placeholder="Blood Pressure (0-not taking, 1-taking)">
+				  <input type="text" name="hdl" class="form-control"  title="Give it as a number" placeholder="HDL (mg/dL)">
+				</div>
+			  </div>
+		</div>
+
+		<div class="intro">
+			<div class="row">
+				<div class="col">
+				  <input type="text" name="smoke" class="form-control"  placeholder="Smoke (1-yes,0-no)">
 				</div>
 				<div class="col">
-					<input type="text" name="diab" class="form-control" placeholder="Diabetics (1-yes,0-no)">
+				  <input type="text" name="bpm" class="form-control"  placeholder="Blood Pressure (0-not taking, 1-taking)">
+				</div>
+				<div class="col">
+					<input type="text" name="diab" class="form-control"  placeholder="Diabetics (1-yes,0-no)">
 				  </div>
 			  </div>
 		</div>
